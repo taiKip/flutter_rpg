@@ -15,36 +15,42 @@ ThemeData primaryTheme = ThemeData(
 /**
  * seed color 
  */
-  colorScheme: ColorScheme.fromSeed(seedColor: AppColors.primaryAccent),
+    colorScheme: ColorScheme.fromSeed(seedColor: AppColors.primaryAccent),
 
-  // Scaffold color
+    // Scaffold color
 
-  scaffoldBackgroundColor: AppColors.secondaryAccent,
+    scaffoldBackgroundColor: AppColors.secondaryAccent,
 
-  //app bar theme colors
-  appBarTheme: AppBarTheme(
-      backgroundColor: AppColors.secondaryColor,
-      foregroundColor: AppColors.textColor,
-      surfaceTintColor: Colors.transparent,
-      centerTitle: true),
-
-  textTheme: TextTheme(
-    bodyMedium: TextStyle(
-      color: AppColors.textColor,
-      fontSize: 16,
-      letterSpacing: 1,
+    //app bar theme colors
+    appBarTheme: AppBarTheme(
+        backgroundColor: AppColors.secondaryColor,
+        foregroundColor: AppColors.textColor,
+        surfaceTintColor: Colors.transparent,
+        centerTitle: true),
+    textTheme: TextTheme(
+      bodyMedium: TextStyle(
+        color: AppColors.textColor,
+        fontSize: 16,
+        letterSpacing: 1,
+      ),
+      headlineMedium: TextStyle(
+        color: AppColors.titleColor,
+        fontSize: 16,
+        fontWeight: FontWeight.bold,
+        letterSpacing: 1,
+      ),
+      titleMedium: TextStyle(
+        color: AppColors.titleColor,
+        fontSize: 18,
+        fontWeight: FontWeight.bold,
+        letterSpacing: 2,
+      ),
     ),
-    headlineMedium: TextStyle(
-      color: AppColors.titleColor,
-      fontSize: 16,
-      fontWeight: FontWeight.bold,
-      letterSpacing: 1,
-    ),
-    titleMedium: TextStyle(
-      color: AppColors.titleColor,
-      fontSize: 18,
-      fontWeight: FontWeight.bold,
-      letterSpacing: 2,
-    ),
-  ),
-);
+
+    //card theme
+    cardTheme: CardTheme(
+        color: AppColors.secondaryColor.withOpacity(0.5),
+        surfaceTintColor: Colors.transparent,
+        shape: const RoundedRectangleBorder(),
+        shadowColor: Colors.transparent,
+        margin: const EdgeInsets.only(bottom: 16)));

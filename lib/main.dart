@@ -23,3 +23,6 @@ class Sandbox extends StatelessWidget {
     );
   }
 }
+
+enum Priority { low, medium, high, urgent }
+
