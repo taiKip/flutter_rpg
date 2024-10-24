@@ -1,6 +1,5 @@
 import 'package:flutter_rpg/models/vocation.dart';
 
-
 class Skill {
   final String id;
   final String name;
@@ -17,7 +16,7 @@ final List<Skill> allSkills = [
   // algo wizard skills
   Skill(
       id: '1',
-      name: 'Brute Force Bolt',
+      name: 'Brute Force',
       image: 'bf_bolt.jpg',
       vocation: Vocation.wizard),
   Skill(
